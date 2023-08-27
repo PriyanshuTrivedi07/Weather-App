@@ -16,24 +16,24 @@
         <div class="card p-3 w-50 h-100 rounded-4">
             <div class="search-bar">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Enter city name" aria-label="Search">
-                    <button class="btn search-btn shadow" type="submit">Search</button>
+                    <input class="form-control me-2" id="search-text" placeholder="Enter city name" aria-label="Search">
+                    <button class="btn search-btn shadow" id="search-btn" type="button">Search</button>
                 </form>
             </div>
             <div class="weather-info d-flex align-items-center justify-content-center flex-column gap-3">
-                <h2 class="city-name mt-3">Etawah</h2>
-                <h5 class="curr-weather">Rainy</h5>
-                <div class="weather-img w-25">
-                    <img src="./images/pngwing.com.png" class="img-fluid" alt="">
+                <h2 class="city-name mt-3" id="city">Etawah</h2>
+                <h5 class="curr-weather text-capitalize">Rainy</h5>
+                <div class="weather-img w-50 text-center">
+                    <img src="" class="img-fluid" alt="">
                 </div>
-                <h1 class="temp">31°C</h1>
+                <h1 class="temp" id="temp">31°C</h1>
                 <div class="details row w-100 text-center">
                     <div class="col-6 p-2 d-flex align-items-center justify-content-center">
                         <div class="weather-img w-25">
-                            <img src="./images/humidity.png" class="img-fluid" alt="">
+                            <img src="./images/humidity.png" class="img-fluid" id="weather-icon" alt="">
                         </div>
                         <div class="text-start ps-3">
-                            <p class="humidity mb-0">50%</p>
+                            <p class="humidity mb-0" id="humidity">50%</p>
                             <p class="mb-0">Humidity</p>
                         </div>
                     </div>
@@ -42,8 +42,8 @@
                             <img src="./images/winds-weather-symbol.png" class="img-fluid" alt="">
                         </div>
                         <div class="text-start ps-3">
-                            <p class="humidity mb-0">15 km/h</p>
-                            <p class="mb-0">Wind</p>
+                            <p class="wind mb-0" id="wind-speed">15 km/h</p>
+                            <p class="mb-0">Wind Speed</p>
                         </div>
                     </div>
                     
