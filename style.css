@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap');
-/* font-family: 'Poppins', sans-serif;  */
+
 
 
 :root {
@@ -17,6 +17,11 @@
 body {
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    /* background: url(/images/rainBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
     width: 100vw;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -24,10 +29,10 @@ body {
 
 .card{
     background: linear-gradient(45deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 5%));
-    backdrop-filter: blur(10px);
-    /* box-shadow: 0px 1px 24px -1px rgb(0, 0, 0, 10%); */
+    backdrop-filter: blur(5px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     position: relative;
+    z-index: 99;
 }
 .search-bar input{
     background-color: transparent;
@@ -36,19 +41,22 @@ body {
     border-bottom: 1px solid var(--off-white);
 }
 .search-btn{
-    /* border: 2px solid var(--blue-2); */
     background-color: var(--off-white);
     color: var(--blue-2);
     transition: all 0.3s;
 }
+.search-btn i{
+    display: none;
+}
 .search-btn:hover{
-    /* border: 2px solid var(--off-white); */
     background-color: var(--blue-2);
     color: var(--off-white);
 }
-/* .weather-img{
-    max-width: 150px;
-} */
+
+.temp span{
+    font-size: 4rem;
+    margin-right: 5px;
+}
 .circle{
     width: 200px;
     height: 200px;

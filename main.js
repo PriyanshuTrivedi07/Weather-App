@@ -33,14 +33,14 @@ async function fetchWeather(city){
 // function to display data on the screen 
 function displayWeather(data){
     const cityName = document.getElementById('city');
-    const temperature = document.getElementById('temp');
+    const temperature = document.querySelector('.temp span');
     const humidity = document.getElementById('humidity');
     const windSpeed = document.getElementById('wind-speed');
     const currWeather = document.querySelector('.curr-weather');
     const weatherImg = document.querySelector('.weather-img img');
 
     cityName.innerHTML = data.name;
-    temperature.innerHTML = Math.round(data.main.temp) + '°C';
+    temperature.innerHTML = Math.round(data.main.temp);
     humidity.innerHTML = data.main.humidity + '%';
     windSpeed.innerHTML = data.wind.speed + ' m/s';
     currWeather.innerHTML = data.weather[0].description;
